@@ -1,14 +1,25 @@
-<div class="row p-3 shadow-lg">
+<div class="row p-2 shadow-lg">
   <div class="container">
     <div class="row">
+      <div class="col-md-4 d-flex aling-items-end justify-content-center">
+        <h5 class="text-primary">
+          <fa-icon [icon]="icons.hotel" [size]="'xl'"></fa-icon>
+          <fa-icon [icon]="icons.hotel" [size]="'lg'"></fa-icon>
+          <fa-icon [icon]="icons.hotel" [size]="'sm'"></fa-icon>
+        </h5>
+      </div>
       <div class="col-md-4 d-flex aling-items-center justify-content-center">
-        <h5 class="text-primary">Reservation</h5>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" />
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">
+              <fa-icon [icon]="icons.search"></fa-icon>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <input type="text" class="form-control rounded">
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <h6>Anuncie seu espaço</h6>
+      <div class="col-md-4 d-flex aling-items-center justify-content-center">
+        <fa-icon [icon]="icons.bars" [size]="'xl'" ></fa-icon>
       </div>
     </div>
   </div>

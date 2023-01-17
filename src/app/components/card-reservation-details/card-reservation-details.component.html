@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-6 text-end">
       <span>
-        <fa-icon [icon]="icons.star"></fa-icon>
+        <fa-icon [icon]="icons.star" [classes]="['text-primary']"></fa-icon>
         {{ payload.stars }}
       </span>
     </div>
@@ -18,7 +18,24 @@
   <div class="row m-1">
     <div class="col-md-6 d-flex flex-column border rounded p-2">
       <small>CHECK-IN</small>
-      <span>01/03/2023</span>
+      <div class="row">
+        <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+          <input
+            type="text"
+            placeholder="Datepicker"
+            class="form-control"
+            bsDatepicker
+          />
+        </div>
+        <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+          <input
+            type="text"
+            placeholder="Daterangepicker"
+            class="form-control"
+            bsDaterangepicker
+          />
+        </div>
+      </div>
     </div>
     <div class="col-md-6 d-flex flex-column border rounded p-2">
       <small>CHECK-OUT</small>
@@ -30,7 +47,10 @@
   </div>
 
   <button class="btn btn-primary mt-3 text-white p-2">Reservar</button>
-  <small class="text-center mt-2">Você ainda não será cobrado</small>
+  <small class="text-center mt-2">
+    <fa-icon [icon]="icons.alert" [classes]="['text-primary']"></fa-icon>
+    Você ainda não será cobrado
+  </small>
 
   <div class="col-md-12">
     <hr />
@@ -44,5 +64,10 @@
     <div class="col-md-4 text-end">
       <span>R$ {{ payload.total }}</span>
     </div>
+  </div>
+
+  <div class="col-md-12 text-center mt-5">
+    <fa-icon [icon]="icons.flag" [classes]="['text-danger']"></fa-icon>
+    <span class="mx-1">Denunciar esse anuncio</span>
   </div>
 </div>

@@ -4,6 +4,8 @@ import {
   faMedal,
   faShare,
   faHeart,
+  faFlag,
+  faExclamationCircle
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -17,6 +19,8 @@ export class CardReservationDetailsComponent implements OnInit {
     medal: faMedal,
     heart: faHeart,
     share: faShare,
+    flag: faFlag,
+    alert: faExclamationCircle
   };
 
   payload = {

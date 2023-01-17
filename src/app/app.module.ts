@@ -13,9 +13,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { ImagesFrameComponent } from './components/images-frame/images-frame.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { CardReservationDetailsComponent } from './components/card-reservation-details/card-reservation-details.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, AppbarComponent, HeaderComponent, ImagesFrameComponent, DescriptionComponent, CardReservationDetailsComponent],
+  declarations: [AppComponent, AppbarComponent, HeaderComponent, ImagesFrameComponent, DescriptionComponent, CardReservationDetailsComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
